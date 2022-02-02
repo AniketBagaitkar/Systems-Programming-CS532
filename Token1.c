@@ -1,6 +1,6 @@
 /* Purpose: To read input string through command line arguments and create a table with keywords and count.
 To Compile: gcc Token1.c -o Token1
-To run: ./a.out "*Keywords*"< inputfile.txt*/
+To run: ./Token1 "*Keywords*"< inputfile.txt*/
 
 #include <malloc.h>
 #include <string.h>
@@ -17,7 +17,7 @@ struct node
 };
 
 typedef struct node fnode;
-fnode *newnode, *ptr, *prev, *temp;
+fnode *newnode, *abc, *xyz, *temp;
 fnode *first = NULL, *last = NULL;
 fnode* create_node(char*);
 void insert_node(char*);
@@ -26,18 +26,18 @@ void compare(char* );
 void display();
 
 void display(){
-        for (ptr = first;ptr != NULL;ptr = ptr->next)
+        for (abc = first;abc != NULL;abc = abc->next)
         {    
-            printf("%s\t%d\n", ptr->Keyword,ptr->count);
+            printf("%s\t%d\n", abc->Keyword,abc->count);
         }
 }
 void compare(char* check){
     char *token1 = strtok(check, " ");
     while(token1) {
         printf("%s\n",token1);
-        for (ptr = first;ptr !=NULL;ptr=ptr->next){
-            if(ptr->Keyword==token1){
-                ptr->count=ptr->count+1;
+        for (abc = first;abc !=NULL;abc=abc->next){
+            if(abc->Keyword==token1){
+                abc->count=abc->count+1;
                 printf("%s",token1);
             }
         }
@@ -45,11 +45,11 @@ void compare(char* check){
     }
 }
 void update_val(char* update){
-    for (ptr = first;ptr != NULL;ptr = ptr->next)
+    for (abc = first;abc != NULL;abc = abc->next)
         {
-            if (ptr->Keyword == update)
+            if (abc->Keyword == update)
             {
-                ptr->count = ptr->count++;
+                abc->count = abc->count++;
             }
         }
 }
@@ -100,9 +100,9 @@ int main(int argc, char *argv[])
     }
     char *token1 = strtok(a, " ");
     while(token1) {
-        for (ptr = first;ptr !=NULL;ptr=ptr->next){
-            if(strcmp(ptr->Keyword,token1)){
-                ptr->count=ptr->count+1;
+        for (abc = first;abc !=NULL;abc=abc->next){
+            if(strcmp(abc->Keyword,token1)){
+                abc->count=abc->count+1;
             }
         }
         token1 = strtok(NULL, " ");    
