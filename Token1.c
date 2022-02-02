@@ -1,5 +1,5 @@
 /* Purpose: To read input string through command line arguments and create a table with keywords and count.
-To Compile: gcc temp.c -o temp
+To Compile: gcc Token1.c -o Token1
 To run: ./a.out "*Keywords*"< inputfile.txt*/
 
 #include <malloc.h>
@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
     char *input = argv[1];
     char a[2000];
     printf("Enter the string");
-    gets(a);
+    fgets(a,2000,stdin);
     puts(a);
     printf("Parsing the input string '%s'\n", input);
     char *token = strtok(input, " ");
