@@ -1,3 +1,9 @@
+/*
+Name: Aniket Ashok Bagaitkar
+BlazerID: aniketb
+To compile: gcc readdir.c -o readdir
+To Execute: ./readdir <filepath>
+*/
 #include <stdio.h> 
 #include <stdlib.h>
 #include <dirent.h> 
