@@ -4,7 +4,7 @@
 To illustrate ioredirection in C.
 
 ## Github Link:
-
+https://github.com/AniketBagaitkar/Systems-Programming-CS532/tree/main/lab%2010
 
 ## How to compile:
 gcc -Wall -o lab7 lab7_solution.c
