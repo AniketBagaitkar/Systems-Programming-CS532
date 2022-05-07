@@ -19,7 +19,7 @@ Here argv is used to store keyword and argc is the counter for keyword. 'i' is t
 Here we have implemented dynamic array allocation.
 compare() function is used to compare the keywords with the words from each line.
 ## Github:
-https://github.com/AniketBagaitkar/Systems-Programming-CS532/blob/main/temp.c
+https://github.com/AniketBagaitkar/Systems-Programming-CS532/edit/main/HW1/
 
 ## Credits:
 I'd like to thank Dr. Unan and the TA's.
