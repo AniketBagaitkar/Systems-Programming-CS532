@@ -1,3 +1,12 @@
+/*
+
+Name: Aniket Ashok Bagaitkar
+BlazerID: aniketb
+To compile: gcc -o aniket_hw1 aniket_hw1.c
+To run: ./aniket_hw1 <keywords>
+Replace keywords with string you want and replace file with your file.
+
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
