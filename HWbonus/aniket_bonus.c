@@ -3,7 +3,7 @@ Reference: " https://www.geeksforgeeks.org/making-linux-shell-c/ "
 To implement a simple shell or command line interpreter
 BlazerID: aniketb
 Name: Aniket Ashok Bagitkar
-To compile: gcc -o uab_sh shell.c -lreadline
+To compile: gcc -o uab_sh aniket_bonus.c
 To run:./uab_sh
 */
 #include<stdio.h>
